@@ -2,3 +2,5 @@ django
 PyPDF2
 google-generativeai
 python-dotenv
+django-cors-headers
+
