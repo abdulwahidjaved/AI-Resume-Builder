@@ -6,7 +6,7 @@ import 'package:path/path.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
 class ApiService {
-  static const base = "http://192.168.1.7:8000/api"; // change for your setup
+  static const base = "https://ai-resume-builder-3-rvn1.onrender.com/api"; // change for your setup
 
   // 🧾 Upload Resume (works for both Web and Mobile)
   static Future<Map<String, dynamic>> uploadResume({

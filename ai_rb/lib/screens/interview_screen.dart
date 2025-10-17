@@ -102,7 +102,9 @@ class _InterviewScreenState extends State<InterviewScreen> {
                       final res = await ApiService.finish(sessionId!);
                       if (res['status'] == 'success') {
                         Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => ResultScreen(evaluation: res['evaluation'], qna: List.from(res['qna']))));
-                      } else showError(res['message'] ?? "Finish failed");
+                      } else {
+                        showError(res['message'] ?? "Finish failed");
+                      }
                     }, child: const Text("Finish"))
                   ]),
                   const SizedBox(height: 20),
